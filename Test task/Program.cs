@@ -13,9 +13,10 @@ namespace Test_task
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Enter the path:");
-            //string path = Console.ReadLine();
-            Folder folder = new Folder(@"D:\New folder");
+            Console.WriteLine("Enter the path:");
+            string path = Console.ReadLine();
+            Folder folder = new Folder(path);
+            //Folder folder = new Folder(@"D:\New folder");
             //folder.ShowInformation();
 
             JsonSerializer jsonSerializer = new JsonSerializer();
